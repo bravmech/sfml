@@ -78,6 +78,6 @@ if __name__ == '__main__':
         logging.info('word2vec model loading...')
         model_w2v = KeyedVectors.load_word2vec_format(MODEL_PATH)
 
-    # wv_test = WordVectors('train', model_w2v)
+    # wv_train = WordVectors('train', model_w2v)
     wv_test = WordVectors('test', model_w2v)
     wv_test.load(None, True)
